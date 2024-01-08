@@ -71,6 +71,7 @@
 }
 
 .span-accent {
+  display: block;
   font-family: "Noto Serif";
   font-style: italic;
   font-weight: normal;
@@ -102,6 +103,7 @@
 }
 
 .header__footer {
+  z-index: 1;
   margin-top: auto;
   margin-left: 80px;
   margin-bottom: 40px;
@@ -114,7 +116,6 @@
 }
 
 .header__paragraph {
-  z-index: 1;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -124,4 +125,5 @@
   margin-right: 80px;
   margin-bottom: 40px;
   border: 1px solid red;
+  margin-left: 700px;
 }
