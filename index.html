@@ -8,6 +8,7 @@
     <meta name="author" content="Talitha Neves Lemes" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./blocks/page.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,16 +37,16 @@
           />
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Receitas</a>
+              <a href="#receitas_link" class="nav__link">Receitas</a>
             </li>
             <li>
-              <a class="nav__link">Cardápio</a>
+              <a href="#receitas_link" class="nav__link">Cardápio</a>
             </li>
             <li>
-              <a class="nav__link">Reservar uma mesa</a>
+              <a href="#reservation__form" class="nav__link">Reservar uma mesa</a>
             </li>
             <li>
-              <a class="nav__link">Contatos</a>
+              <a href="#receitas_link" class="nav__link">Contatos</a>
             </li>
           </ul>
         </nav>
@@ -67,7 +68,7 @@
         <div class="header__footer">
           <p class="header__paragraph">
             <span>
-              >Horários: <br />
+              Horários: <br />
               Segunda a sexta (10:00 – 19:00)<br />
             </span>
             Sábado a Domingo (11:00 – 18:00)
@@ -89,7 +90,7 @@
           </h3>
 
           <ul class="recipes__videos">
-            <li class="recipes__video-item">
+            <li class="recipes__video-item" id="receitas_link">
               <iframe
                 class="recipes__iframe"
                 width="480"
@@ -124,7 +125,70 @@
           </ul>
         </section>
 
-        <section class="reservation"></section>
+        <section class="reservation">
+
+            <h2 class="reservation__title">Reservar uma mesa</h2>
+
+
+            <form class="reservation__form" id="reservation__form">
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="name">Nome *</label><br />
+                <input
+                  type="text"
+                  class="form__input"
+                  name="name"
+                  id="name"
+                  placeholder="Nome"
+                /><br />
+
+                <label class="form__label" for="numbers"
+                  >Números de convidados *</label
+                ><br />
+                <input
+                  type="number"
+                  class="form__input"
+                  name="numbers"
+                  id="numbers"
+                  placeholder="1-8"
+                />
+                <br />
+
+                <label class="form__label" for="datehora">Data & hora *</label
+                ><br />
+                <input
+                  type="datetime-local"
+                  class="form__input"
+                  name="datehora"
+                  id="datehora"
+                /><br />
+
+                <label class="form__label" for="email">Seu e-mail *</label><br />
+                <input
+                  type="email"
+                  class="form__input"
+                  name="email"
+                  id="email"
+                  placeholder="email@email"
+                /><br />
+
+              <div class="form__button">
+                <button type="submit" class="forms__button">
+                  Reservar uma mesa
+                </button>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  class="form__checkbox"
+                  name="termo"
+                  id="termo"
+                />
+                <span class="checkbox">Eu concordo com termos de uso</span>
+              </div>
+            </form>
+
+        </section>
+
         <section class="menu"></section>
         <section class="about"></section>
       </main>
