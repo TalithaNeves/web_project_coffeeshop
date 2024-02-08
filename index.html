@@ -42,7 +42,7 @@
               <a href="#receitas_link" class="nav__link">Cardápio</a>
             </li>
             <li>
-              <a href="#reservation__form" class="nav__link">Reservar uma mesa</a>
+              <a href="#reservation" class="nav__link">Reservar uma mesa</a>
             </li>
             <li>
               <a href="#receitas_link" class="nav__link">Contatos</a>
@@ -118,47 +118,49 @@
             </li>
           </ul>
         </section>
-        <section class="reservation">
-            <h2 class="reservation__title">Reservar uma mesa</h2>
-            <form class="reservation__form" id="reservation__form">
-              <fieldset class="form__fieldset">
-                <label class="form__label" for="name">Nome *</label><br />
-                <input
-                  type="text"
-                  class="form__input"
-                  name="name"
-                  id="name"
-                  placeholder="Nome"
-                /><br />
-                <label class="form__label" for="numbers"
-                  >Números de convidados *</label
-                ><br />
-                <input
-                  type="number"
-                  class="form__input"
-                  name="numbers"
-                  id="numbers"
-                  placeholder="1-8"
-                />
-                <br />
-                <label class="form__label" for="datehora">Data & hora *</label
-                ><br />
-                <input
-                  type="datetime-local"
-                  class="form__input"
-                  name="datehora"
-                  id="datehora"
-                /><br />
-                <label class="form__label" for="email">Seu e-mail *</label><br />
-                <input
-                  type="email"
-                  class="form__input"
-                  name="email"
-                  id="email"
-                  placeholder="email@email"
-                /><br />
-              <div class="form__button">
-                <button type="submit" class="forms__button">
+        <section class="reservation" id="reservation">
+          <h2 class="reservation reservation__title">Reservar uma mesa</h2>
+          <form class="form reservation__form">
+            <fieldset class="form form__fieldset reservation__form">
+              <label class="form form__label reservation__form" for="name"
+                >Nome *</label
+              ><br />
+              <input
+                type="text"
+                class="form__input"
+                name="name"
+                id="name"
+                placeholder="Nome"
+              /><br />
+              <label class="form__label" for="numbers"
+                >Números de convidados *</label
+              ><br />
+              <input
+                type="number"
+                class="form__input"
+                name="numbers"
+                id="numbers"
+                placeholder="1-8"
+              />
+              <br />
+              <label class="form__label" for="datehora">Data & hora *</label
+              ><br />
+              <input
+                type="datetime-local"
+                class="form__input"
+                name="datehora"
+                id="datehora"
+              /><br />
+              <label class="form__label" for="email">Seu e-mail *</label><br />
+              <input
+                type="email"
+                class="form__input"
+                name="email"
+                id="email"
+                placeholder="email@email"
+              /><br />
+              <div class="form">
+                <button type="submit" class="form form__button">
                   Reservar uma mesa
                 </button>
               </div>
@@ -171,7 +173,8 @@
                 />
                 <span class="checkbox">Eu concordo com termos de uso</span>
               </div>
-            </form>
+            </fieldset>
+          </form>
         </section>
         <section class="menu"></section>
         <section class="about"></section>

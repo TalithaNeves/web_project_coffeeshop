@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  min-height: 720px;
+
   background-color: #d9e7ff;
   display: flex;
   flex-direction: column;
@@ -32,6 +32,7 @@
   flex-direction: column;
   padding: 0;
   width: 385px;
+
   border: 0;
   margin-bottom: 120px;
 }
@@ -57,7 +58,7 @@
   padding: 15px 20px;
   margin-top: 8px;
   box-sizing: border-box;
-
+  max-width: 385px;
   height: 60px;
 }
 
@@ -72,7 +73,7 @@
   justify-content: center;
 }
 
-.forms__button {
+.form__button {
   background: #2f80ed;
   margin-bottom: 32px;
   width: 100%;
@@ -81,8 +82,9 @@
   cursor: pointer;
   border: 0;
   transition: opacity 0.4s;
+  margin: 32px 0;
 }
-.forms__button:hover {
+.form__button:hover {
   opacity: 0.7;
 }
 
